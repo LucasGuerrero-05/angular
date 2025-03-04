@@ -1,0 +1,167 @@
+.detalles-contenedor {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 0px;
+  margin-bottom: 94px;
+  padding-top: 94px;
+
+}
+
+.container-imagen {
+  width: 60%;
+}
+
+.container-imagen img{
+  width: 100%;
+  text-align: center;
+  background-position: left;
+}
+
+.detalles {
+  width: 40%;
+}
+
+.detalles-contenedor h1{
+    font-size: 50px;
+}
+
+
+.detalles-contenedor strong{
+  font-size: 30px;
+  font-weight: 600;
+}
+.detalles-contenedor .btn{
+  
+  background-color: #0071e3;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+  margin: 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 9px 21px;
+
+}
+
+.compra {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.detalles-contenedor .btn button{
+ 
+  margin: 0;
+  
+}
+
+.btn-añadir-carrito {
+  background-color: transparent;
+  color: #0071e3;
+  border: 1px solid #0071e3;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 9px 21px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.btn-añadir-carrito:hover {
+  background-color:#0071e3;
+  color: white;
+  border: 1px solid #0071e3;
+  cursor: pointer;
+  border-radius: 25px;
+  margin: 0px;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: auto;
+  padding: 9px 21px;
+  font-weight: 500;
+}
+
+
+.brand-logo {
+  width: 15px;
+}
+
+.brand-logo strong p{
+  font-size: 10px;
+}
+
+.detalles-contenedor strong {
+  font-size: 14px;
+}
+
+.product-brand {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.detalles {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.product-category {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.product-price {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+ .product-price strong{
+  margin: 0px;
+  padding: 0px;
+  line-height: 5px;
+  font-size: 25px;
+}
+.product-colors {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+
+}
+
+.product-price .current-price {
+  font-size:30px;
+  font-weight: 500;
+  color: rgb(24, 24, 24);
+} 
+.product-price .old-price{
+  font-size:20px;
+  text-decoration: line-through;
+  text-decoration-thickness: 1px; /* Hace la línea más delgada */
+  text-decoration-color: rgba(113, 113, 113, 0.7); /* Color rojo con opacidad */
+  font-weight: normal; 
+color: gray;
+
+}
+

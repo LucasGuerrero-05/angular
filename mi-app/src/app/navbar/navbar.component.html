@@ -1,0 +1,37 @@
+<nav>
+  <div class="logo" (click)="goToHome()">
+    <img class="brand-logo" src="assets/images/apple-logo.webp" alt="Apple Logo">
+  </div>
+
+  <div class="navbarul">
+    <ul>
+      <li><a (click)="goTostore()">Store</a></li>
+      <li><a (click)="goTomacbook()">Mac</a></li>
+      <li><a (click)="goToipad()">iPad</a></li>
+      <li><a (click)="goToiphone()">iPhone</a></li>
+      <li><a (click)="goTowatch()">Watch</a></li>
+      <li><a (click)="goTovision()">Vision</a></li>
+      <li><a (click)="goToairpods()">AirPods</a></li>
+      <li><a (click)="goTotvandhome()">TV & Home</a></li>
+      <li><a (click)="goToentertainment()">Entertainment</a></li>
+      <li><a (click)="goToaccesories()">Accessories</a></li>
+      <li><a (click)="goTosupport()">Support</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-icons">
+    <img src="assets/images/descarga (1).svg" alt="Buscar" class="icon">
+    <img src="assets/images/descarga.svg" alt="Carrito de compras" class="icon">
+
+  </div>
+  <div class="user-section">
+    <a class="ingresar" (click)="goTologin()">
+      {{ isLoggedIn ? 'Cerrar Sesión' : 'Iniciar Sesión' }}
+    </a>
+    <!-- Icono de perfil (solo aparece si está logueado) -->
+    <a *ngIf="isLoggedIn" class="profile-icon" (click)="goToProfile()">
+      <img src="assets/images/profile-icon.png" alt="Perfil">
+    </a>
+  </div>
+
+</nav>

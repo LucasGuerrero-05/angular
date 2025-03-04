@@ -1,0 +1,50 @@
+<div *ngIf="!product">
+  <p>Cargando producto...</p>
+</div>
+
+<div class="detalles-contenedor">
+  <div *ngIf="product" class="container-imagen">
+    <img [src]="product.image" [alt]="product.name">
+  </div>
+
+  <div *ngIf="product" class="detalles">
+    <h1 class="product-name" [innerHTML]="product.name"></h1>
+
+    <div class="product-category">
+      <strong>Categoría:</strong> <span>{{ product.category }}</span>
+    </div>
+
+    <div class="product-brand">
+      <strong>Marca:</strong>
+      <img [src]="product.brand" alt="Marca" class="brand-logo">
+    </div>
+
+   
+
+    <div class="product-colors">
+      <strong>Colores disponibles:</strong>
+      <span *ngFor="let col of product.colors" class="color-option">{{ col.color }}</span>
+    </div>
+
+    <div class="product-price">
+      <span class="current-price">${{ product.price }}</span>
+      <span class="old-price">${{ product.old_price }}</span>
+    </div>
+
+    <div class="compra">
+      <button class="btn">Comprar</button>
+      <button class="btn-añadir-carrito">Añadir al carrito</button>
+    </div>
+
+    <p class="product-description">{{ product.description }}</p>
+  </div>
+</div>
+
+
+<!-- product-details.component.html -->
+<!-- <div *ngIf="product" class="product-description">
+  <app-product-description 
+    [description]="product.descriptionLarge" 
+    [styles]="product.styles">
+  </app-product-description>
+</div> -->

@@ -1,0 +1,14 @@
+<div class="products-container">
+    <h2>Shop iPhone</h2>
+    <div class="products-grid">
+      <div class="product-card" *ngFor="let product of filteredProducts">
+        <h3 [innerHTML]="product.name"></h3>
+        <img [src]="product.image" alt="{{ product.name }}" class="product-image" (click)="goToProductDetails(product.name)">
+        <div class="product-details">
+          <p>Desde: ${{ product.price }}</p>
+          <button class="btn" (click)="goToProductDetails(product.name)">Comprar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

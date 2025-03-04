@@ -1,0 +1,196 @@
+.main {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 88vh;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.form-title {
+    font-weight: 600;
+    color: rgb(56, 56, 56);
+    font-size: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 400;
+}
+
+.login-form {
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 25%;
+}
+
+/* Estilos para el contenedor del label y el input */
+.field {
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+    
+}
+
+/* Estilo del label: posición y transición */
+.field label {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #767575;
+    font-weight: 400;
+    font-size: 15px;
+    transition: all 0.3s ease;
+    pointer-events: none; /* Evitar que el label interfiera con el input */
+    background: white; /* Fondo para evitar superposición */
+    padding: 0 5px; /* Espacio alrededor del label */
+    border-radius: 10px;
+    padding: 0px 2px;
+    margin: 0px;
+}
+
+/* Estilo de los inputs */
+.input-field {
+    width: 100%;
+    padding: 14px 10px;
+    border: 1px solid #888888;
+    border-radius: 12px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* Cambiar el borde del input cuando está enfocado */
+.input-field:focus {
+    border: 1.5px solid #0071e9;
+}
+
+/* Estilo del label cuando el input tiene focus o contenido */
+.field:focus-within label,
+.input-field:not(:placeholder-shown) + label {
+    top: -1px; /* Mover el label arriba */
+    font-size: 12px; /* Hacer el label más pequeño */
+    color: #0071e9; /* Cambiar color cuando está enfocado */
+
+}
+
+button {
+    all: unset; /* Elimina todos los estilos por defecto */
+    background-color: #007ff6;
+    font-size: 12px;
+    color: white;
+    padding: 7px 12px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: 0px;
+  background-color: 007ff6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+
+  &:hover {
+    background-color: #005ecb;
+  }
+
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+}
+
+.remember-password {
+    margin-top: 40px;
+}
+p {
+    color: #005fbe;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.register a {
+    all: unset;
+    color: #005fbe;
+}
+
+.register {
+    display: flex;
+gap: 5px;
+color: rgb(58, 58, 58);
+}
+
+.register a {
+    cursor: pointer;
+}
+
+.field {
+    position: relative; // Asegura que el error se posicione dentro del contenedor del input
+    margin-bottom: 30px;
+  
+    .input-field {
+      outline: none;
+      transition: border-color 0.3s ease;
+  
+      &:focus {
+        border-color: #007aff; // Azul estilo Apple
+      }
+    }
+  
+    label {
+      position: absolute;
+      left: 10px;
+      font-size: 14px;
+      color: #777;
+      transition: all 0.3s ease;
+    }
+  
+    // Estilos para los mensajes de error
+    
+  }
+  
+  // Botón de envío
+  .submit-button {
+
+    cursor: pointer;
+    transition: background 0.3s ease;
+  
+    &:hover {
+      background-color: #005ecb;
+    }
+  
+    &:disabled {
+      background-color: #ccc;
+      cursor: not-allowed;
+    }
+  }
+  
+  // Estilo general del formulario
+  .login-form {
+    max-width: 400px;
+    margin: auto;
+    background: white;
+  }
+  
+
+  .error-message {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+position: absolute;  
+left: 5px;
+padding-top: 2px;
+}
+
+.error-message-2 {
+    color: red;
+    font-size: 13px;
+    margin-bottom: 10px;
+left: 5px;
+padding-top: 2px;
+}

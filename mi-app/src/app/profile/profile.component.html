@@ -1,0 +1,33 @@
+<div class="profile-container">
+    <h1>Perfil de Usuario</h1>
+    
+    <div class="user-info">
+      <h3>Información del Usuario</h3>
+      <p><strong>Nombre:</strong> {{ user.nombre }}</p>
+      <p><strong>Email:</strong> {{ user.email }}</p>
+      <p><strong>Rol:</strong> {{ user.rol }}</p>
+
+    </div>
+    
+    <!-- Sección de usuario -->
+    <div *ngIf="role === 'user'" class="user-section">
+      <h3>Sección Usuario</h3>
+      <p>Acceso básico a tu cuenta.</p>
+      <!-- Aquí puedes agregar más elementos para el rol 'user' -->
+    </div>
+    
+    <!-- Sección de editor -->
+    <div *ngIf="role === 'editor'" class="editor-section">
+      <h3>Sección Editor</h3>
+      <p>Acceso a edición de contenido.</p>
+      <!-- Aquí puedes agregar más elementos para el rol 'editor' -->
+    </div>
+    
+    <!-- Sección de administrador -->
+    <div *ngIf="role === 'admin'" class="admin-section">
+      <h3>Sección Administrador</h3>
+      <p>Acceso a todas las configuraciones y usuarios.</p>
+      <!-- Aquí puedes agregar más elementos para el rol 'admin' -->
+    </div>
+  </div>
+  

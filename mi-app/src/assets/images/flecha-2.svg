@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" width="36" height="36">
+	<title>flecha-2</title>
+	<defs>
+		<image  width="10" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAASCAMAAABVab95AAAAAXNSR0IB2cksfwAAAEtQTFRFR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHR0dHlC+uAwAAABl0Uk5TACiAJ+n/1CLo6iTt2O4t2S7nIOPIxxdoEHxnLeoAAABjSURBVHicPc7BCoAwDAPQhA0dIurJ//9CEQ9jE2Wu7VxO71CSEhbWmFxnFYwjX3ilKhV2gV2gaIhF+uaMwEur14jgTlsJz38AsWcUqucchWYeOszpxlLsne1NWNuT1VsjdvIDmdchf0A2tLEAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use  href="#img1" x="12" y="9"/>
+</svg>

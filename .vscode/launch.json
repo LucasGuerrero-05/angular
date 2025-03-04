@@ -1,0 +1,15 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      
+        
+      {
+        "type": "node", // Tipo de depuración (Node.js)
+        "request": "launch", // Iniciar una nueva sesión de depuración
+        "name": "Depurar Node.js", // Nombre de la configuración
+        "program": "${workspaceFolder}/backend/server.js", // Archivo de entrada
+        "skipFiles": ["<node_internals>/**"], // Ignorar archivos internos de Node.js
+        "console": "integratedTerminal" // Mostrar salida en la terminal integrada
+      }
+    ]
+  }
