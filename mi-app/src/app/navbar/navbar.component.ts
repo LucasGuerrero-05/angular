@@ -9,6 +9,7 @@ import { WatchCategoryComponent } from '../watch-category/watch-category.compone
 import { IpadCategoryComponent } from '../ipad-category/ipad-category.component';
 import { LoginComponent } from '../login-user/login/login.component';
 import { NgIf } from '@angular/common';  // 👈 Importa NgIf
+import { CartService } from '../services/cart/cart.service';
 
 @Component({
   selector: 'app-navbar',
@@ -18,18 +19,26 @@ import { NgIf } from '@angular/common';  // 👈 Importa NgIf
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  isLoggedIn: boolean = false;  // Variable que indica si el usuario está logueado
+  isLoggedIn: boolean = false;
+  cartItemCount: number = 0; 
 
-  constructor(private router: Router, private authService: AuthService) {}
+  constructor(
+    private router: Router, 
+    private authService: AuthService,
+    private cartService: CartService
+  ) {}
 
   ngOnInit(): void {
     this.authService.isAuthenticated().subscribe((loggedIn) => {
       this.isLoggedIn = loggedIn;
     });
+
+    this.cartService.cartCount$.subscribe((count) => {
+      this.cartItemCount = count;
+    });
   }
   
 
-  // Funciones para redirigir
   goToHome() {
     this.router.navigate(['/']);
   }
